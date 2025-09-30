@@ -1,0 +1,9 @@
+[2025-09-24 21:50:08] - ERRO: Tentativa de criar usuário duplicado: asd
+[2025-09-24 21:51:21] - ERRO: UNIQUE constraint failed: especies.nome_popular
+[2025-09-24 22:15:33] - ERRO: UNIQUE constraint failed: especies.nome_popular
+[2025-09-30 11:20:05] - ERRO: UNIQUE constraint failed: especies.nome_popular
+[2025-09-30 11:20:19] - ERRO: UNIQUE constraint failed: especies.nome_popular
+[2025-09-30 12:43:25] - ERRO: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+[2025-09-30 12:52:57] - ERRO: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+[2025-09-30 13:02:19] - ERRO: 1049 (42000): Unknown database 'bestiario_db'
+[2025-09-30 13:02:23] - ERRO: 1049 (42000): Unknown database 'bestiario_db'
