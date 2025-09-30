@@ -1,17 +1,17 @@
 CREATE TABLE IF NOT EXISTS usuarios (
-    id INTEGER PRIMARY KEY,
-    nome_usuario TEXT UNIQUE NOT NULL,
-    senha TEXT NOT NULL
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_usuario VARCHAR(50) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS especies (
-    id INTEGER PRIMARY KEY,
-    id_criador INTEGER,
-    nome_popular TEXT NOT NULL,
-    classificacao TEXT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_criador INT,
+    nome_popular VARCHAR(100) NOT NULL,
+    classificacao VARCHAR(50),
     descricao_fisica TEXT,
     comportamento TEXT,
-    populacao_estimada INTEGER DEFAULT 1,
+    populacao_estimada INT DEFAULT 1,
     dados_adicionais TEXT,
     FOREIGN KEY (id_criador) REFERENCES usuarios(id) ON DELETE SET NULL
 );
